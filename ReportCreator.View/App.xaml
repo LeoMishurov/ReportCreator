@@ -1,0 +1,18 @@
+﻿<Application x:Class="ReportCreator.View.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ReportCreator.View"
+             xmlns:viewModel="clr-namespace:ReportCreator.ViewModel;assembly=ReportCreator.ViewModel"
+             StartupUri="MainWindow.xaml">
+    
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type viewModel:DivisionEditViewModel}">
+            <local:DivisionEditView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:EquipmentEditViewModel}">
+            <local:EquipmentEditView/>
+        </DataTemplate>
+    </Application.Resources>
+
+
+</Application>
